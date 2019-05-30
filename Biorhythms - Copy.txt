@@ -1,0 +1,46 @@
+Description of Biorhythms:
+
+     Biorhythm is a theory that is used to define activity believed to occur in a person’s life with the help of mathematical cycles/formula. Theory defines persons have three type of biological cycles – Physical, Emotional and Intellectual. These mathematical cycles are present from the moment of birth. Biorhythms theory has acceding and descending curve i.e sine and cosine curve, top of the curve indicates physical, emotional and intellectual capacity are at peak where bottom defines as critical position.
+
+Physical Cycle has a period of 23 days, second Emotional Cycle has a period 28 days, finally Intellectual cycle has a period of 33 days.
+Cycle are calculated according to their defined formula:
+•	physical: sin (2 p t / 23) 
+•	emotional: sin (2 p t / 28) 
+•	intellectual: sin (2 p t / 33 
+      
+
+Pseudocode for calculation of Biorhythms:
+
+1.	Import main libraries that are used in theory like matplotlib, numpy, datetime.
+2.	Accept Date of Birth by user in defined format (dd-mm-yyyy)
+3.	Accept Target/Current date by user in defined format (dd-mm-yyyy)
+4.	We defined range of 40 days according to target date defined by user.
+5.	We define code in four different function.
+•	First GetDaymonthYear() is used to get day, month year individual and convert birth date and target date to ordinal.
+•	 Create an array of month code
+•	Second Function DaysRange() create a range of 40 days and store in array.
+•	Third Function GetBiorhythms() is used to calculate physical, emotional and intellectual cycle form their formulas and store in array to manipulate graph
+•	Fourth Function ShowGraph() used that manipulated cycle list, initialize label, legend, title  and calculate and defined data in graphical representation with the help of matplotlib libraries .
+6.	Figure is obtained.
+
+
+
+Graphical Display:
+
+Date of Birth: 05-05-1978
+Target Date: 30-05-2019
+
+ 
+
+Highlights :
+	
+?	Graph contains three different cycle from biorhythms theory physical denotes red, emotional denoted blue and intellectual denotes green. 
+?	Graph also denotes person’s behavior from Birth date to target date in 40 range cycle.
+
+Discussion :
+
+?	Take date of birth from user and store in variable to call first function define day, month and year separately and also convert to ordinal
+?	Repeat same process for target date.
+?	Create day range and insert into array by calling second function.
+?	Calculate for physical, emotional and intellectual by calling third function and,
+?	Create sine curves by calling fourth function and create graph with title, axis and legend. 
